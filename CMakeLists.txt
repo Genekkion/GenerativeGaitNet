@@ -21,7 +21,8 @@ add_compile_options(-DHAVE_CSTDDEF)
 add_definitions(-DMASS_ROOT_DIR="..")
 set(CMAKE_MODULE_PATH "${CMAKE_HOME_DIRECTORY}/cmake")
 
-
+set(PYTHON_INCLUDE_DIR /usr/local/include/python3.6dm)
+set(PYTHON_LIBRARY /usr/local/lib/x86_64-linux-gnu/libpython3.6dm.a)
 find_package(PythonLibs 3.6 EXACT REQUIRED)
 find_package(PythonInterp 3.6 EXACT REQUIRED)
 
