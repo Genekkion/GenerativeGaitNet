@@ -72,7 +72,7 @@ install_library fcl https://github.com/flexible-collision-library/fcl 0.6.1 "-DF
 install_library bullet3 https://github.com/bulletphysics/bullet3 2.89 \
     "-DBUILD_SHARED_LIBS=ON -DCMAKE_POSITION_INDEPENDENT_CODE=ON"
     
-install_library dart https://github.com/dartsim/dart v6.9.2 \
-    "-DDART_ENABLE_SIMD=ON -DFCL_INCLUDE_DIRS=$ENVDIR/include/fcl -DBULLET_INCLUDE_DIRS=$ENVDIR/include/bullet"
+#install_library dart https://github.com/dartsim/dart v6.9.2 \
+#    "-DDART_ENABLE_SIMD=ON -DFCL_INCLUDE_DIRS=$ENVDIR/include/fcl -DBULLET_INCLUDE_DIRS=$ENVDIR/include/bullet"
 
 popd
