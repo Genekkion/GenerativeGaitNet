@@ -34,9 +34,10 @@ install_library() {
         cd ..
     fi
 
-    make -j$(nproc) install
+    #make -j$(nproc) install
     popd
 }
+pushd $SRCDIR
 
 install_library dart https://github.com/dartsim/dart v6.9.2 \
     "-DDART_ENABLE_SIMD=ON -DFCL_INCLUDE_DIRS=$ENVDIR/include/fcl -DBULLET_INCLUDE_DIRS=$ENVDIR/include/bullet"
